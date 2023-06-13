@@ -1,0 +1,530 @@
+﻿@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 1.25rem;
+}
+
+body {
+    background-color: #eee;
+    font-family: 'Poppins', sans-serif;
+    line-height:1.5;
+    
+}
+
+section {
+    min-height: 80vh;
+  
+}
+nav, section, #stopka {
+    padding: 2.5rem 0;
+    display: flex;
+    align-items: center;
+}
+
+section, #stopka{
+    scroll-margin-top: 5rem;
+}
+
+.zawartosc1200 {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.burger{
+    font-size: 3em;
+    position: fixed;
+    right: 0.5em;
+    top: 0.5em;
+    display: none;
+    cursor: pointer;
+    border-radius: 0.2rem;
+    background-color: #555;
+}
+.nakladka{
+    background-color: rgba(0,0,0,0.95);
+    position: fixed;
+    height: 100%;
+    width: 0;
+    transition: 1s;
+    right: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.nakladka ol{
+    text-align: center;
+    justify-content: center;
+}
+.nakladka ol li{
+    
+}
+.nakladka ol li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2.5em;
+    display: block;
+    box-shadow: inset 0 0 0 0 white;
+    margin: 0 -.25rem;
+    padding: 0.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.nakladka ol li a:hover{
+    box-shadow: inset 10rem 0 0 0 #333;
+    color: white;
+}
+.zamknijX{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 5em;
+    top: 0.1em;
+    right: 0.3em;
+}
+
+nav{
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 0;
+}
+nav ol{
+    display: flex;
+    gap: 1em;
+}
+nav ol li{}
+nav ol li a{
+    padding: 1em;
+    display: inline;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 500ms;
+}
+nav ol li a:hover{
+    background-color: white;
+    color: #222;
+}
+
+
+#pierwsza{}
+#druga{}
+#trzecia{}
+#czwarta{}
+#piata{}
+/*------------------------------*/
+nav{
+    background-color: #222;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem 0;
+    z-index: 1;
+}
+
+nav .zawartosc1200{
+    background: none;
+}
+
+nav ol{
+    display: flex;
+    gap: 1rem;
+}
+
+nav ol li{
+    
+}
+
+nav ol li a {
+    display: block;
+    padding: 1.2em;
+    background-color: white;
+    width: 10vw;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: #222;
+    transition: 600ms;
+    font-weight: 300;
+}
+
+nav ol li a:hover{
+    background-color: #222;
+    color: white;
+    font-weight: 900;
+}
+
+#pierwsza {
+    background: url(../img/bd1.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#logo{
+    background: url(../img/logo.png);
+    background-color: #222;
+    height: 9rem;
+    width: 9rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(-25deg);
+    transition:2s;
+    
+
+    color: #fff;
+    font-size: 6.5rem;
+    font-weight: 900;
+}
+
+#logo:hover{
+    transform: rotate(-360deg);
+    box-shadow: 0 0.2rem 1rem black, 0 0 0.5rem white inset;
+}
+
+#pierwsza h1{
+    background-color: white;
+    margin-top: 5vh;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #222;
+    
+}
+
+#pierwsza h1 span{
+    font-weight: 900;
+}
+
+#pierwsza a{
+    display:block;
+    background-color: black;
+    color: white;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1rem;
+    width: 20vw;
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: 800;
+    transition: 1s;
+}
+
+#pierwsza a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0.125rem 1.25rem black, 0 0 1.25rem white inset;
+
+}
+
+#druga {
+    font-family: 'Taviraj', serif;
+    background: url(../img/bd2.png) no-repeat center center;
+    background-size: cover;
+}
+
+#druga .zawartosc1200{
+    display: flex;
+    gap: 1rem;
+    padding: 1em;
+}
+
+#druga .kolumna1{
+    background: url(../img/kl1.png) no-repeat center center;
+    background-color: #eee;
+}
+
+#druga .kolumna2{
+    background: url(../img/kl2.png) no-repeat center center;
+    background-color: #eee;
+}
+
+#druga .kolumna3{
+    background: url(../img/kl3.png) no-repeat center center;
+    background-color: #eee;
+}
+
+#druga article{
+    background-color: black;
+    padding: 1em;
+}
+
+#druga article header{
+    background-color: #ccc;
+    padding: 1em;
+    font-weight: 900;
+    display:flex;
+    gap: 0.625rem;
+
+}
+
+#druga article main{
+    background-color: #ddd;
+    padding: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+#druga article footer{
+    background-color: #ccc;
+    padding: 1.25em;
+ 
+}
+
+#druga article footer a{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    text-decoration:none;
+    gap: 0.625rem;
+    padding: 1.25rem;
+    transition: 1s;
+}
+#druga article footer a:hover{
+    background-color: white;
+    color: black;
+
+}
+
+#trzecia {
+    font-family: 'Kanit', sans-serif;
+    background-color: black;
+   
+}
+
+#trzecia .zawartosc1200 {
+    background-color: black;
+    display: flex;
+    gap: 2em;
+    padding: 2rem;
+}
+
+#trzecia article {
+    background-color: #eee;
+    padding: 2rem;
+    flex: 1;
+}
+
+#trzecia .tresc {
+    background-color:#eee;
+    display:flex;
+    gap: 2em;
+    padding: 2rem;
+}
+
+#trzecia .tresc2 {
+    background-color: #eee;
+    display:flex;
+    gap: 2em;
+    padding: 2rem;
+}
+
+#trzecia .rysunek{
+    background: url(../img/rysunek.png) no-repeat center center;
+
+}
+
+#stopka{
+    background-color: #333;
+    color: #666;
+}
+#stopka .zawartosc1200 main{
+    display: flex;
+}
+
+#stopka main{
+    background-color: white;
+    display: flex;
+    gap: 2em;
+    padding: 1rem;
+    align-items: center;
+    justify-content:center;
+}
+
+#stopka main article a{
+    color: black;
+    text-decoration: none;
+}
+
+#stopka main article p{
+    padding: 0.25rem;
+}
+
+#stopka h6{
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#formularz{
+    background-color: #ccc;
+    padding: 2rem;
+    border-radius: 2rem;
+
+}
+#formularz h2{
+     margin: 0 0 1rem;
+     font-weight: 600;
+     font-size: 1rem;
+     text-align: center;
+     color: black;
+}
+::placeholder{
+    color: white;
+}
+
+#formularz label{
+    display: inline-block;
+    width:28%;
+    font-size: 0.8rem;
+    text-align:right;
+}
+
+#formularz input{
+     background: none;
+     display: inline-block;
+     padding: 0.25rem;  
+     margin-bottom: 0.5rem;
+     border: none;
+}
+#formularz input:focus{
+    background-color: white;
+    outline: none;
+}
+#kierunkowy {
+    width: 10%;
+}
+
+#telelfon {
+    width: 40%
+}
+#stopka input[type=submit] {
+    background-color: black;
+    color: white;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    transition: 1s;
+}
+
+#stopka input[type=submit]:hover{
+    background-color: white;
+    color: black;
+}
+@media all and (max-width: 800px){
+    html{
+        font-size: 30px;
+    }
+    body {
+        font-size: 22px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+    /*sekcja pierwsza*/
+    #pierwsza .zawartosc1200 a{
+        margin-left:auto;
+        margin-right:auto;
+    }
+    /*sekcja druga*/
+    #druga .zawartosc1200{
+        flex-direction:column;
+        padding: 0.1rem;
+    }
+    #druga article header div{
+        font-size: 1.3rem;
+    }
+    #druga .kolumna1 p{
+        font-size: 0.7rem;
+    }
+    #druga .kolumna2 p{
+        font-size: 0.7rem;
+    }
+    #druga .kolumna3 p{
+        font-size: 0.7rem;
+    }
+    #druga article footer a{
+        font-size: 1rem;
+        padding:0.8rem;
+    }
+    /*sekcla trzecia*/
+    #trzecia .zawartosc1200{
+        flex-direction:column;
+        padding: 0.1rem;
+    }
+    #trzecia .tresc{
+        flex-direction:column;
+        background-color: white;
+        font-size: 0.7rem;
+    }
+    #trzecia .tresc2{
+        flex-direction: column;
+        background-color: white;
+        font-size:0.7rem;
+    }
+    #trzecia .rysunek{
+        font-size:0.7rem;
+    }
+    /*stopka*/
+    #stopka .zawartosc1200 main{
+        flex-direction: column;
+    }
+    #stopka .zawartosc1200 article p span{}
+
+    #stopka input[type=submit]{
+        width: 100px;
+        height: 50px;
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        border-radius: 0.3rem;
+    }
+}
+.scale-up-center {
+    -webkit-animation: scale-up-center 3s cubic-bezier(.39,.575,.565,1.000) 5s infinite both;
+    animation: scale-up-center 3s cubic-bezier(.39,.575,.565,1.000) 5s infinite both
+}
+@-webkit-keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-up-center {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
